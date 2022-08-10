@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Courses Site</title>
+</head>
+<body>
+    
+    <header id="header">
+
+        <div class="headerContainer">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="headerText">
+                <h1>The purpose is to<br>teach, bring learning to people</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nam accusamus atque ut corporis impedit fugit, provident quo! Minima unde dolores incidunt vero repudiandae optio dolorem animi ipsam nesciunt deserunt?</p>
+                <button class="commonBtn" type="button"><a href="#">Sign up Now</a></button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div><!-- decorative lines -->
+            </div><!-- header text -->
+        </div><!-- heaer conatainer -->
+
+    </header>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+        <img src="images/menu.png" alt="menu" class="humburger" id="menuBtn"><!-- humburger -->
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.oneclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+</html>
